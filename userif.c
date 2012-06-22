@@ -517,10 +517,10 @@ VNetCsumCopyDatagram(const struct sk_buff *skb,	// IN: skb to copy
 	 unsigned int tmpCsum;
 	 const void *vaddr;
 
-	 vaddr = kmap(frag->page);
+	 vaddr = kmap(skb_frag_page(frag));
 	 tmpCsum = csum_and_copy_to_user(vaddr + frag->page_offset,
 					 curr, frag->size, 0, &err);
-	 kunmap(frag->page);
+	 kunmap(skb_frag_page(frag));
 	 if (err) {
 	    return err;
 	 }

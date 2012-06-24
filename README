@@ -1,1 +1,11 @@
-This is the vmnet linux kernel module as provided by Vmware. Vmware is the origianl owner and copyright owner of this module, however patches ported to it to make it compatible to the Linux kernel 3.2 are not officially supported by Vmware. Vmware may decide to incorporate the changes, however I provide absolutely no guarantee - I create these patches for my own usage, so use at your own risks :-)
+## patched vmware vmnet kernel module for the 3.2.* kernel
+
+## Notice
+
+Vmware is the copyright owner of the original vmnet-only source code; that being said, my patches are not officially supported, nor sponsored by Vmware.
+
+Vmware may decide to incorporate these changes, however I provide absolutely no guarantee - I create these patches for my own usage, so use them at your own risks :)
+
+## Minor 3.2 revision support
+
+A tag is used to define successful build against a revision, this marks a checkpoint from which compilation tests are done against higher minor revisions.
